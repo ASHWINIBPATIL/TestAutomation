@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation">
+  <test name="Scenarios">
+     <classes>
+         <class name="com.sgtesting.practice.Assignment1"></class>
+         <class name="com.sgtesting.practice.Assignment2"></class>
+         <class name="com.sgtesting.practice.Assignment3"></class>
+         <class name="com.sgtesting.practice.Assignment4"></class>
+         <class name="com.sgtesting.practice.Assignment5"></class>
+         <class name="com.sgtesting.practice.Assignment6"></class>
+         <class name="com.sgtesting.practice.Assignment7"></class>
+         <class name="com.sgtesting.practice.Assignment8"></class>
+         <class name="com.sgtesting.practice.Assignment9"></class>
+         
+     </classes>
+  </test>
+</suite>

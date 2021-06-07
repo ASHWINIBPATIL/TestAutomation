@@ -1,0 +1,634 @@
+<html>
+<head>
+<title>TestNG:  Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>111/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 02 21:26:17 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>411 seconds (411833 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2LogingAgainAgain()'><b>User2LogingAgainAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.DeleteUser()'><b>DeleteUser</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.deleteUser1()'><b>deleteUser1</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2Loging()'><b>User2Loging</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2Logout()'><b>User2Logout</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User2()'><b>User2</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1LogingAgain()'><b>User1LogingAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User2Loging()'><b>User2Loging</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment1</td>
+<td></td>
+<td>16</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.Admin1loginAgain()'><b>Admin1loginAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment1<br>Parameters: admin, manager</td>
+<td></td>
+<td>12</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2LogoutAgain()'><b>User2LogoutAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User3Logout()'><b>User3Logout</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.minimizeFlyOutWindow()'><b>minimizeFlyOutWindow</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User1Loging()'><b>User1Loging</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.Admin1logoutAgainAgain()'><b>Admin1logoutAgainAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.Admin1login()'><b>Admin1login</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.DeleteUser()'><b>DeleteUser</b><br>Test class: com.sgtesting.practice.Assignment1</td>
+<td></td>
+<td>16</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.Admin1logout()'><b>Admin1logout</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.minimizeFlyOutWindow()'><b>minimizeFlyOutWindow</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.ModifyUser2()'><b>ModifyUser2</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.modifyProject()'><b>modifyProject</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User3Loging()'><b>User3Loging</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1LogingAgainAgain()'><b>User1LogingAgainAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2LogingAgain()'><b>User2LogingAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>47</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1Loging()'><b>User1Loging</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment1</td>
+<td></td>
+<td>44</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.ModifyUser()'><b>ModifyUser</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.ModifyCustomer()'><b>ModifyCustomer</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User3()'><b>User3</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.deleteUser3()'><b>deleteUser3</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.deleteUser2()'><b>deleteUser2</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment3</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.Adminlogin()'><b>Adminlogin</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.ModifyUser3()'><b>ModifyUser3</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment2<br>Parameters: admin, manager</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.deleteUser3()'><b>deleteUser3</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.createTask()'><b>createTask</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.Adminlogin()'><b>Adminlogin</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment7<br>Parameters: admin, manager</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User1()'><b>User1</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>25</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment4<br>Parameters: admin, manager</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment4.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtesting.practice.Assignment4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment4@1786dec2</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1()'><b>User1</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>14</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User1logout()'><b>User1logout</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>18</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.User2Logout()'><b>User2Logout</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.DeleteCustomer()'><b>DeleteCustomer</b><br>Test class: com.sgtesting.practice.Assignment3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment2.CreateUser()'><b>CreateUser</b><br>Test class: com.sgtesting.practice.Assignment2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment2@53f65459</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.CreateProject()'><b>CreateProject</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1logout()'><b>User1logout</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1logoutAgain()'><b>User1logoutAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.Admin1login()'><b>Admin1login</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.CreateCustomer()'><b>CreateCustomer</b><br>Test class: com.sgtesting.practice.Assignment3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2()'><b>User2</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User2LogoutAgainAgain()'><b>User2LogoutAgainAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.CreateUser()'><b>CreateUser</b><br>Test class: com.sgtesting.practice.Assignment1</td>
+<td></td>
+<td>12</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment6<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User1logoutAgainAgain()'><b>User1logoutAgainAgain</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment8.Adminlogout()'><b>Adminlogout</b><br>Test class: com.sgtesting.practice.Assignment8</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment8@4b1c1ea0</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment1.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.practice.Assignment1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment1@6895a785</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment3<br>Parameters: admin, manager</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.deleteUser2()'><b>deleteUser2</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.login()'><b>login</b><br>Test class: com.sgtesting.practice.Assignment5<br>Parameters: admin, manager</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.User3()'><b>User3</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment3.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment3</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.practice.Assignment3@3b088d51</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.CreateProject()'><b>CreateProject</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.ModifyUser1()'><b>ModifyUser1</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.deleteTask()'><b>deleteTask</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.CreateProject()'><b>CreateProject</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment5.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtesting.practice.Assignment5</td>
+<td></td>
+<td>15</td>
+<td>com.sgtesting.practice.Assignment5@74650e52</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment6.DeleteProject()'><b>DeleteProject</b><br>Test class: com.sgtesting.practice.Assignment6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment6@15d0c81b</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment7.navigate()'><b>navigate</b><br>Test class: com.sgtesting.practice.Assignment7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.practice.Assignment7@6acdbdf5</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.deleteUser1()'><b>deleteUser1</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+<tr>
+<td title='com.sgtesting.practice.Assignment9.logout()'><b>logout</b><br>Test class: com.sgtesting.practice.Assignment9</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.practice.Assignment9@17579e0f</td></tr>
+</table><p>
+</body>
+</html>
